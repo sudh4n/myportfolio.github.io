@@ -63,9 +63,9 @@ const typed=new Typed('.multiple-text', {
 
 function SendMail() {
     var params = {
-        from_name: document.getElementById("fullName").value,
-        email_id: document.getElementById("email_id").value,
-        message: document.getElementById("message").value,
+        name: 'Sudhan',
+reply_email: 'sudhanmadhan10@gmail.com',
+message: 'This is awesome!'
     }
     emailjs.send("service_lniy41t", "template_b0v6otn",params).then(function (res) {
         alert("Success" + res.status);
