@@ -63,7 +63,7 @@ const typed=new Typed('.multiple-text', {
 
 function SendMail() {
     var params = {
-        name: document.getElementById("fullname").value,
+        from_name: document.getElementById("fullName").value,
         email_id: document.getElementById("email_id").value,
         message: document.getElementById("message").value,
     }
