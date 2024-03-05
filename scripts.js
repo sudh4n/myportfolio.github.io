@@ -64,8 +64,8 @@ const typed=new Typed('.multiple-text', {
 function SendMail() {
     var params = {
         name: document.getElementById("fullname").value,
-        email_id: document.getElementById("email_id).value,
-        message: document.getElementById("message).value,
+        email_id: document.getElementById("email_id").value,
+        message: document.getElementById("message").value,
     }
     emailjs.send("service_lniy41t", "template_b0v6otn",params).then(function (res) {
         alert("Success" + res.status);
